@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+<br><br><br>
+
+ <%=link_to 'All', articles_path%>
+  <% Category.all.each do |category|%>
+  <%=link_to category.name, articles_path(category: category.name)%>
+  <% end %>
+  <br><br><br>
+
+
+
+
+
+    <% @articles.each do |article| %>
+    <div class="col-md-3">
+    <div class="card">
+      <div class="card-block">
+        <%= link_to (image_tag article.image.url(:thumb)), article, class:"card-img-top imgtop"%>
+        <h4 class="card-title"> <%=link_to article.name, article %></h4>
+        <p class="card-text"><%= article.price %>
+       
+     </div>
+</div>
+</div>
+
+    <% end %>
+ 
+
+
+

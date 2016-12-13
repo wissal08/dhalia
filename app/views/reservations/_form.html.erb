@@ -1,0 +1,43 @@
+<%= form_for(@reservation) do |f| %>
+  <% if @reservation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@reservation.errors.count, "error") %> prohibited this reservation from being saved:</h2>
+
+      <ul>
+      <% @reservation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+ <div class="col-md-4"></div> 
+<div class="col-md-4">
+  <div class="form-group">
+    <%= f.label :first_Name %><br>
+    <%= f.text_field :firstname, class: 'form-control' %>
+  </div>
+   <div class="form-group">
+    <%= f.label :last_Name %><br>
+    <%= f.text_field :last, class: 'form-control' %>
+  </div>
+   <div class="form-group">
+  <%= f.collection_select :service_id, Service.all, :id, :name, {prompt: "choose service"}%>
+   </div>
+   
+   <div class="form-group">
+    <%= f.label :phone_number%><br>
+    <%= f.number_field :name, class: 'form-control' %>
+  </div>
+   <div class="form-group">
+    <%= f.label :date %><br>
+    <%= f.date_field :date, class: 'form-control' %>
+  </div>
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+  <div class="actions form-group">
+    <%= f.submit "Reserve", class: 'btn btn-success'%>
+    </div>
+     <div class="col-md-4"></div>
+  </div>
+  </div>
+<% end %>

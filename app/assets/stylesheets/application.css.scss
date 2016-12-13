@@ -1,0 +1,72 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap";
+
+.hi{
+    
+    margin-top:0px;
+    padding-top:0px;
+}
+
+a.nav-link:hover{
+    
+    background-color:rgba(247, 247, 249, 0.85);
+    
+    
+}
+
+a.btn.btn-success{
+    
+    text-align: center;
+    
+    
+}
+a.btn.btn-success:hover{
+    
+    background-color:#808000;
+    color: white;
+}
+
+
+.imgcontact{
+
+width: 450px;
+ padding-top: 20px;   
+}
+
+.reservetitle{
+    
+      text-align: center;
+    font-family:'Dancing Script', cursive;
+    color:#808000;
+    font-weight:bold;
+    font-size:4rem;
+}
+
+a:visited {
+    color: #ddd;
+    background-color:#808000;
+}
+
+.logo{
+    
+    margin-left:1rem;
+}
+
+.navbar-brand:visited{
+    
+    background-color:white;
+}

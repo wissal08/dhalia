@@ -1,0 +1,154 @@
+html,body{width:100%;
+    height:100%;
+    font-size:15px;
+}
+
+
+nav ul{
+    float:right;
+    margin: 10px 10px auto;
+    
+}
+.nav-item{
+    
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 20px;
+    font-weight: 600;
+    padding-right: 10px;
+
+}
+nav {
+    background-color: rgba(247, 247, 249, 0.85);
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
+#content{
+    padding-left:0px;
+  margin-right:0px;  
+  padding-top:50px;
+  height: 100%;
+  width:100%;
+}
+#slideshow {
+ position: relative;
+   height: 595.28px;
+   
+ width: 100%;
+
+  
+ 
+  margin: 0 auto;
+}
+
+#slideshow > div {
+   max-width:100%;
+  
+  
+  position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    
+    bottom: 10px; 
+  
+}
+
+
+.slideimg{
+    
+    height: 580.28px;
+    width: 1088px;
+    max-width: 100%;
+    border-radius:8px;
+    
+}
+.sec{
+    
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin-top: 20px;
+}
+
+ p{
+    
+    text-align: justify;
+    font-family: 'Vollkorn', serif;
+    font-size:15px;
+    
+}
+.sec h1, h3{
+    
+    
+    text-align: center;
+}
+
+ .sec h1{
+    
+    font-family:'Dancing Script', cursive;
+    color:#808000;
+    font-weight:bold;
+    font-size:3rem;
+}
+.text{
+       position: fixed;
+       
+       color: white;
+	  
+	   margin-top: 180px;
+	   text-align: center;
+	 margin-left: 400px;
+	 z-index: 80;
+       
+       
+ }
+
+ .text h1{
+    text-align: center;
+    font-family:'Dancing Script', cursive;
+    color:#808000;
+    font-weight:bold;
+    font-size:5rem;
+}
+
+.btn-succes {
+    color: #fff;
+    background-color: #808000;
+    border-color: #808000;
+    text-align:center;
+}
+
+
+    
+
+
+
+ 
+ .img1{
+     
+     display: block;
+     width:400px;
+     height:230px;
+     max-width:100%;
+     margin:10px;
+     border-radius:8px;
+ }
+ .text{
+     
+     position: fixed;
+     z-index: 90;
+     text-align: center;
+     left: 50%;
+    top: 50%;     
+ }
+ 
+ .img2{
+     width:900px;
+     height:350px;
+     margin-left:30px;
+ }
+ .container{
+     
+     margin: 0 0 0 0;
+ }
